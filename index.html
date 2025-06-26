@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Video Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg,  grey);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #ff8a00, Black);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: #fff; /* Changed to white */
+        }
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1200px;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .video-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-info {
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        .video-desc {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+            border: none;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .container { gap: 30px; }
+            .video-title { font-size: 1.3rem; }
+        }
+        @media (max-width: 1024px) {
+            .video-card-small {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .video-card-small .video-wrapper video {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        @media (min-width: 1025px) {
+            .video-card-small {
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .video-card-small .video-wrapper video {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mamlaka Video Collection</h1>
+        <!-- <p class="tagline">Pitch Dec Videos </p> -->
+    </header>
+
+    <div class="container">
+
+                <div class="video-card">
+            <div class="video-wrapper">
+               <video controls poster="video\Screenshot 2025-06-24 133613.png">
+                  <source src="video\YESHARA VIDEO (5).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                    <h2 class="video-title">What is Yeshara</h2>
+                <p class="video-desc">Asset tokenization transforms traditional markets by digitizing ownership and converting assets into secure, tradeable blockchain tokens, increasing investment accessibility and expanding asset management to a wider range of investors.</p>
+          
+             <a href="https://app.yeshara.network/registe">https://app.yeshara.network/registe</a>
+           
+            </div>
+        </div>
+
+               <div class="video-card">
+            <div class="video-wrapper">
+               <video controls poster="video\Screenshot 2025-06-26 143543.png">
+                  <source src="video\vid2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                    <h2 class="video-title">Tokenization</h2>
+                <p class="video-desc">How Tokenization Is Changing Ownership</p>
+
+             <a href="https://app.yeshara.network/registe">https://app.yeshara.network/registe</a>
+           
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <div class="video-wrapper">
+               <video controls poster="video\Screenshot 2025-06-24 133652.png">
+                    <source src="video\IMC.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">IMC(Impala Coin)</h2>
+                <p class="video-desc">
+           Impala Coin (IMC) is a digital utility token that transforms everyday airtime purchases into real economic value. Pegged 1:1 to the US dollar
+                </p>
+          
+            <a href=" https://app.impalapay.com/"> https://app.impalapay.com/</a>
+           
+            </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="video-card video-card-small">
+            <div class="video-wrapper" >
+                <video controls poster="video\Screenshot 2025-06-24 133712.png">
+                    <source src="video\Black and Yellow Modern Clean Business Service Information Mobile Video (3).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Commet  App <img src="video\imc (1).png" alt="App Icon" style="vertical-align:middle;width:80px;height:80px;border-radius:8px;margin-left:8px;"/></h2>
+                <!-- <p class="video-desc">Watch cities come alive in this mesmerizing compilation of day-to-night transitions.</p> -->
+                   <p class="video-desc">
+                    <br>Comet Switch</b> is a mobile application that allows users to send and receive money, pay bills, and make purchases using their mobile devices. It is designed to provide a convenient and secure way to manage financial transactions on the go.
+                    <br>With Impala Pay, users can link their bank accounts or credit cards to the app, enabling them to transfer funds instantly to other users or pay for goods and services at participating
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.cometswitch.kenya&pcampaignid=web_share/">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height:56px;vertical-align:middle;"> Link To playstore</a> <br>
+                <a href="https://apps.apple.com/ke/app/impalapay-mobile/id6449749069">
+                  <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:48px;vertical-align:middle;"> Link To AppStore</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Video Gallery | All Rights Reserved </p>
+        </div>
+    </footer>
+
+</body>
+</html>
